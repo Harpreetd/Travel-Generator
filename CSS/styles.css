@@ -1,0 +1,36 @@
+body {
+  position: absolute;
+  width: 100%;
+}
+.main-container {
+  max-width: 600px;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  text-align: center;
+}
+button {
+  padding: 20px;
+  background-color: black;
+  color: white;
+  font-size: large;
+}
+img {
+  height: 500px;
+  width: 500px;
+}
+.india {
+  background-color: plum;
+}
+.dubai {
+  background-color: azure;
+}
+.netherlands {
+  background-color: coral;
+}
+.newZealand {
+  background-color: aquamarine;
+}
+.spain {
+  background-color: bisque;
+}
