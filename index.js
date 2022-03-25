@@ -43,31 +43,38 @@ generateBtn.onclick = generateDestination;
 function generateDestination() {
   cardContainer.innerHTML = "";
   let randomCountry = Math.floor(Math.random() * countriesArray.length);
+  // card.style.backgroundColor = "white";
   switch (randomCountry) {
     case 0:
+      card.classList.remove("dubai", "spain", "netherlands", "newZealand");
       card.classList.add("india");
       countryName.innerText = countriesArray[0].name;
       img.src = countriesArray[0].img;
       aboutCountry.innerText = countriesArray[0].about;
       break;
     case 1:
+      card.classList.remove("india", "spain", "netherlands", "newZealand");
       card.classList.add("dubai");
       countryName.innerText = countriesArray[1].name;
       img.src = countriesArray[1].img;
       aboutCountry.innerText = countriesArray[1].about;
       break;
     case 2:
+      card.classList.remove("india", "dubai", "netherlands", "newZealand");
       card.classList.add("spain");
       countryName.innerText = countriesArray[2].name;
       img.src = countriesArray[2].img;
       aboutCountry.innerText = countriesArray[2].about;
+      break;
     case 3:
+      card.classList.remove("india", "spain", "dubai", "newZealand");
       card.classList.add("netherlands");
       countryName.innerText = countriesArray[3].name;
       img.src = countriesArray[3].img;
       aboutCountry.innerText = countriesArray[3].about;
       break;
     case 4:
+      card.classList.remove("india", "spain", "dubai", "netherlands");
       card.classList.add("newZealand");
       countryName.innerText = countriesArray[4].name;
       img.src = countriesArray[4].img;
